@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "SwiftUIScrollOffset"
-s.version          = "1.3.6"
+s.version          = "1.3.7"
 s.summary          = "SwiftUIScrollOffset"
 s.description      = "Read and update the scroll offset of a SwiftUI List or ScrollView from anywhere in the view hierarchy."
 s.homepage         = "https://github.com/ciaranrobrien/SwiftUIScrollOffset"

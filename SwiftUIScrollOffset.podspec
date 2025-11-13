@@ -6,7 +6,7 @@ s.description      = "Read and update the scroll offset of a SwiftUI List or Scr
 s.homepage         = "https://github.com/ciaranrobrien/SwiftUIScrollOffset"
 s.license          = 'MIT'
 s.author           = { "Ciaranrobrien" => "https://twitter.com/ciaranrobrien" }
-s.source           = { :git => "https://github.com/siteline/swiftui-introspect.git", :tag => 'v' + s.version.to_s }
+s.source           = { :git => "https://github.com/siteline/swiftui-introspect.git", :tag => s.version.to_s }
 s.resource_bundle  = {"SwiftUIScrollOffset.privacy"=>"Sources/SwiftUIScrollOffset/PrivacyInfo.xcprivacy"}
 s.platform     = :ios, '14.0'
 s.requires_arc = true

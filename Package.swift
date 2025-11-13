@@ -1,8 +1,8 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 6.2
 
 /**
 *  SwiftUIScrollOffset
-*  Copyright (c) Ciaran O'Brien 2024
+*  Copyright (c) Ciaran O'Brien 2025
 *  MIT license, see LICENSE file for details
 */
 

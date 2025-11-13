@@ -1,12 +1,13 @@
 /**
 *  SwiftUIScrollOffset
-*  Copyright (c) Ciaran O'Brien 2024
+*  Copyright (c) Ciaran O'Brien 2025
 *  MIT license, see LICENSE file for details
 */
 
 import SwiftUI
 
 public extension ScrollOffsetProxy {
+    @MainActor
     struct Value {
         internal let edges: Edge.Set
         internal let id: AnyHashable?
@@ -22,7 +23,6 @@ public extension ScrollOffsetProxy {
             return resolveOffset(edges, offset)
         }
         
-        @MainActor
         public nonmutating func scrollTo(_ offset: Offset, withAnimation: Bool = false) {
             guard let id,
                   let oldOffset = ScrollSubscriptionStore.shared[offset: id],

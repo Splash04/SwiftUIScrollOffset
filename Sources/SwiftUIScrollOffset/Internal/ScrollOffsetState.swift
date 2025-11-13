@@ -1,6 +1,6 @@
 /**
 *  SwiftUIScrollOffset
-*  Copyright (c) Ciaran O'Brien 2024
+*  Copyright (c) Ciaran O'Brien 2025
 *  MIT license, see LICENSE file for details
 */
 
@@ -8,6 +8,7 @@ import Combine
 import Observation
 import SwiftUI
 
+@MainActor
 @Observable
 @available(iOS 17, macOS 14, tvOS 17, visionOS 1, *)
 internal final class ScrollOffsetState: BaseScrollOffsetState {

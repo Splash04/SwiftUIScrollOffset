@@ -97,7 +97,7 @@ See [Examples](/Sources/SwiftUIScrollOffset/Examples/) for more.
 ## Requirements
 
 * iOS 14.0+, macOS 11.0+, tvOS 14.0+, visionOS 1.0+
-* Xcode 15.0+
+* Xcode 26.0+
 
 ## Installation
 
@@ -115,7 +115,3 @@ pod 'SwiftUIScrollOffset'
 ## Dependencies
 
 * [SwiftUI Introspect](https://github.com/siteline/swiftui-introspect)
-
-## Contact
-
-[@ciaranrobrien](https://twitter.com/ciaranrobrien) on Twitter.

@@ -1,12 +1,13 @@
 /**
 *  SwiftUIScrollOffset
-*  Copyright (c) Ciaran O'Brien 2024
+*  Copyright (c) Ciaran O'Brien 2025
 *  MIT license, see LICENSE file for details
 */
 
 import Combine
 import Foundation
 
+@MainActor
 internal final class ScrollSubscriptionStore {
     static let shared = ScrollSubscriptionStore()
     private init() {}
@@ -29,7 +30,6 @@ internal final class ScrollSubscriptionStore {
         }
     }
     
-    @MainActor
     func subscribe(id: AnyHashable, scrollView: PlatformScrollView) {
         guard self[scrollView: id] != scrollView
         else { return }
@@ -59,7 +59,6 @@ internal final class ScrollSubscriptionStore {
         }
     }
     
-    @MainActor
     func updateOffset(for id: AnyHashable) {
         guard let scrollView = self[scrollView: id] else { return }
         
@@ -95,7 +94,6 @@ internal final class ScrollSubscriptionStore {
         }
     }
     
-    @MainActor
     func updateSubscription(from oldID: AnyHashable, to newID: AnyHashable) {
         subscriptions[newID] = subscriptions[oldID]
         subscriptions.removeValue(forKey: oldID)

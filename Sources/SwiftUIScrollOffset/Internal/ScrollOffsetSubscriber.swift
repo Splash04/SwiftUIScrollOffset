@@ -1,13 +1,12 @@
 /**
 *  SwiftUIScrollOffset
-*  Copyright (c) Ciaran O'Brien 2024
+*  Copyright (c) Ciaran O'Brien 2025
 *  MIT license, see LICENSE file for details
 */
 
 import SwiftUI
 import SwiftUIIntrospect
 
-@MainActor
 internal struct ScrollOffsetSubscriber: ViewModifier {
     @State private var automaticID = UUID()
     
